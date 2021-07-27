@@ -24,14 +24,14 @@ const ProjectCard = ({ title, tags, description, repo, url }) => {
       <Flex sx={{ justifyContent: "flex-end" }}>
         {url && (
           <Link target="_blank" rel="noopenner noreferrer" href={url}>
-            <Button p={1} my={2} mx={1}>
+            <Button p={1} as="a" my={2} mx={1}>
               See Live
             </Button>
           </Link>
         )}
         {repo && (
           <Link target="_blank" rel="noopenner noreferrer" href={repo}>
-            <Button p={1} my={2} mx={1} variant="secondary">
+            <Button p={1} my={2} mx={1} as="a" variant="secondary">
               View Source
             </Button>
           </Link>

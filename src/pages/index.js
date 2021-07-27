@@ -21,7 +21,7 @@ const IndexPage = () => {
       />
     ),
     projects: <Projects />,
-    blog: <Blog />,
+    // blog: <Blog />, // TODO: add this back?
     // snippets: <Snippets />,
     resume: <Resume />,
   })
