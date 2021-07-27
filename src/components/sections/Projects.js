@@ -6,7 +6,7 @@ import { Heading } from "theme-ui"
 import { projectsData } from "../../data/projects"
 const Projects = () => {
   const projects = projectsData.map((project, i) => {
-    let mirror = {
+    const mirror = {
       mirror: i % 2 == 0,
     }
     return (
