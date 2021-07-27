@@ -7,8 +7,8 @@ export const projectsData = [
     description:
       "Intersections is a citywide group art exhibition that takes place in public space across the City of Santa Fe, New Mexico and on this interactive website. Rather than pick a single theme or other unifying commonality to structure the exhibition, the Intersections website allows us to highlight multiple points of connection--the intersections--among a wide range of artworks and among a diverse group of artists who call Santa Fe home. You can sort the works of art by theme, medium, or location and the artists by professional and personal affiliation, in effect, creating hundreds of mini group exhibitions. Or, you can spend time learning about one artist and exploring their work in depth.",
     url: "https://intersections.vitalspaces.org/",
-      repo: "https://github.com/d-sanderson/precision", // if no repo, the button will not show up
-    tags: ["puppeteer", "node"],
+    repo: "https://github.com/imbrikis/intersections", // if no repo, the button will not show up
+    tags: ["d3", "react", "tailwind"],
   },
   {
     id: uuidv4(),
