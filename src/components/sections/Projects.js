@@ -8,7 +8,7 @@ import { projectsData } from "../../data/projects"
 const Projects = () => {
   const projects = projectsData.map((project, i) => {
     return (
-      <Fade delay={500} bottom key={project.id}>
+      <Fade bottom key={project.id}>
         <ProjectCard
           title={project.title}
           tags={project.tags}
