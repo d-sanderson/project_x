@@ -4,6 +4,7 @@ import Fade from "react-reveal/Fade"
 import ProjectCard from "../ProjectCard"
 import { Heading } from "theme-ui"
 import { projectsData } from "../../data/projects"
+
 const Projects = () => {
   const projects = projectsData.map((project, i) => {
     return (

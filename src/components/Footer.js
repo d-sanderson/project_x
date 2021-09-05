@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from "react"
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import { Link, Box, Button } from "theme-ui"
+import React, { useState } from "react"
+import { Link, Box } from "theme-ui"
 import Fade from "react-reveal/Fade"
-import Wobble from "react-reveal/Wobble"
 import useSound from "use-sound"
 import heartBeat from "../utils/sounds/heartbeat.mp3"
-import HitCounter from "./HitCounter"
+// Todo: bring back hit counter?
+// import Wobble from "react-reveal/Wobble"
+// import HitCounter from "./HitCounter"
 
 const Footer = ({ section }) => {
   const [slug, setSlug] = useState("/")

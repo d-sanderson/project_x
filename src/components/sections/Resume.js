@@ -11,5 +11,4 @@ const Resume = () => (
     </Display>
   </Fade>
 )
-
 export default Resume

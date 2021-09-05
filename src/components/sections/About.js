@@ -6,9 +6,9 @@ import Swing from "react-reveal/Swing"
 import Display from "../Display"
 import Fade from "react-reveal/Fade"
 import { useSiteMetadata } from "../../hooks/useSiteMetadata"
+
 const About = () => {
   const { siteMetadata: { about: { title, content } } } = useSiteMetadata()
-
   return (
     <Fade bottom>
       <Display>
@@ -25,4 +25,5 @@ const About = () => {
   )
 }
 export default About
+
 
