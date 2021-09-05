@@ -6,7 +6,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { Container } from "theme-ui"
 import ClientOnly from "./ClientOnly";
 
-import Header from "./Header"
+import SimpleSeo from "./SimpleSeo"
 import Footer from "./Footer"
 const Layout = ({ children, section }) => {
   const data = useStaticQuery(graphql`
@@ -34,7 +34,7 @@ const Layout = ({ children, section }) => {
     }}
     >
     <ClientOnly>
-      <Header siteTitle={title} description={description} />
+      <SimpleSeo siteTitle={title} description={description} />
       <main sx={{ flex: "1 0 auto" }}>{children}</main>
       <Footer section={section}/>
       </ClientOnly>

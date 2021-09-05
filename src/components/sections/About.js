@@ -7,7 +7,7 @@ import Display from "../Display"
 import Fade from "react-reveal/Fade"
 import { useSiteMetadata } from "../../hooks/useSiteMetadata"
 const About = () => {
-  const { siteMetadata: { content: { mainTitle: title, about: content } } } = useSiteMetadata()
+  const { siteMetadata: { about: { title, content } } } = useSiteMetadata()
 
   return (
     <Fade bottom>

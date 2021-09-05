@@ -9,9 +9,13 @@ export const useSiteMetadata = () => {
             title
             description
             author
-            content {
-              mainTitle
-              about
+            topHeader { 
+              superTitle
+              subTitle
+            }
+            about {
+              title
+              content
             }
           }
         }

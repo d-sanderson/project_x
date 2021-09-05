@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import Helmet from "react-helmet"
-export default function Header({ children, siteTitle, description }) {
+export default function SimpleSeo({ children, siteTitle, description }) {
   return (
     <header>
       <Helmet htmlAttributes={{ lang : 'en' }}>
