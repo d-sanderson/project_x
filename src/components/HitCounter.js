@@ -29,7 +29,7 @@ export default function HitCounter({ slug }) {
       }}
     >
       {hits}
-      <RetroHitCounter hits={hits || 251} size={20} />
+      <RetroHitCounter hits={hits} size={20} />
     </div>
   )
 }

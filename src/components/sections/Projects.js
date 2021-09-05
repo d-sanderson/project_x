@@ -6,11 +6,8 @@ import { Heading } from "theme-ui"
 import { projectsData } from "../../data/projects"
 const Projects = () => {
   const projects = projectsData.map((project, i) => {
-    const mirror = {
-      mirror: i % 2 == 0,
-    }
     return (
-      <Fade delay={500} left key={project.id} {...mirror} >
+      <Fade delay={500} bottom key={project.id}>
         <ProjectCard
           title={project.title}
           tags={project.tags}

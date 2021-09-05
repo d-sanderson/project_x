@@ -4,7 +4,7 @@ import { jsx, Flex } from "theme-ui"
 import "./RadioNav.css"
 import RadioNavButton from "./RadioNavButton"
 const RadioNav = ({ handleSetSection, sections }) => {
-  let navLinks = sections.map(el => <RadioNavButton handleSetSection={handleSetSection} title={el} />)
+  let navLinks = sections.map((el, i) => <RadioNavButton key={i} handleSetSection={handleSetSection} title={el} />)
   return (
     <>
       <Flex

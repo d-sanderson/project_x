@@ -10,6 +10,10 @@ module.exports = {
     title: `David Sanderson, Software Developer`,
     description: `Hi! I'm David, I am a software developer from Albuquerque, New Mexico. I enjoy music, design, and engineering creative solutions to interesting problems.`,
     author: `@_dsanderson`,
+    content: {
+      mainTitle: 'Hi I am David Sanderson!',
+      about: 'I am a software developer from Albuquerque, New Mexico. I enjoy music, design, and engineering creative solutions to interesting problems.'
+    }
   },
   plugins: [
     "gatsby-plugin-theme-ui",
