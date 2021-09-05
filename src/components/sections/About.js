@@ -5,8 +5,10 @@ import Jump from "react-reveal/Jump"
 import Swing from "react-reveal/Swing"
 import Display from "../Display"
 import Fade from "react-reveal/Fade"
+import { useSiteMetadata } from "../../hooks/useSiteMetadata"
+const About = () => {
+  const { siteMetadata: { content: { mainTitle: title, about: content } } } = useSiteMetadata()
 
-const About = ({ title, content }) => {
   return (
     <Fade bottom>
       <Display>
