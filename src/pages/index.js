@@ -1,13 +1,9 @@
-import React, { useState, useEffect } from "react"
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import { Flex } from "theme-ui"
-import { useColorMode } from "theme-ui"
+import { useState, useEffect } from "react"
 import { isBrowser } from "../utils/shared"
-import { useSiteMetadata } from '../hooks/useSiteMetadata'
 import Layout from "../components/Layout"
 import RadioNav from "../components/RadioNav"
-import RadioNavButton from "../components/RadioNavButton"
 import TopHeader from "../components/TopHeader"
 import {
   About,
@@ -16,21 +12,15 @@ import {
   // Blog,
   // Snippets
 } from "../components/sections"
-const IndexPage = () => {
+import ColorModeToggle from "../components/ColorModeToggle"
 
-  const { siteMetadata: { content: { mainTitle, about } } } = useSiteMetadata()
-  const [colorMode] = useColorMode()
+const IndexPage = () => {
   const [components] = useState({
-    about: (
-      <About
-        title={mainTitle}
-        content={about}
-      />
-    ),
+    about: <About />,
     projects: <Projects />,
+    resume: <Resume />,
     // blog: <Blog />, // TODO: add this back?
     // snippets: <Snippets />,
-    resume: <Resume />,
   })
   const handleSetSection = title => {
     setSection(title)
@@ -48,12 +38,7 @@ const IndexPage = () => {
 
   return (
     <Layout section={section}>
-      <Flex
-        mr={[null, null, null, "350px"]}
-        sx={{ justifyContent: "flex-end" }}
-      >
-        <RadioNavButton title={colorMode === "default" ? "🌞" : "🌕"} />
-      </Flex>
+      <ColorModeToggle />
       <TopHeader />
       <RadioNav
         handleSetSection={handleSetSection}
