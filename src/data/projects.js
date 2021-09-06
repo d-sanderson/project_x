@@ -4,7 +4,9 @@ export const projectsData = [
   {
     id: uuidv4(),
     title: "Intersections",
-    description: ``,
+    description: `
+    
+    `,
     url: "https://intersections.vitalspaces.org/",
     repo: "https://github.com/imbrikis/intersections", // if no repo, the button will not show up
     tags: ["d3", "react", "tailwind"],
