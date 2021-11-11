@@ -1,5 +1,5 @@
-import React from "react"
 /** @jsx jsx */
+import React from "react"
 import { jsx, Flex } from "theme-ui"
 import "./RadioNav.css"
 import RadioNavButton from "./RadioNavButton"
