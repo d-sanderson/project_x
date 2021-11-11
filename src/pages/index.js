@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useCallback } from "react"
 import { isBrowser } from "../utils/shared"
 import Layout from "../components/Layout"
 import RadioNav from "../components/RadioNav"
@@ -22,9 +22,13 @@ const IndexPage = () => {
     // blog: <Blog />, // TODO: add this back?
     // snippets: <Snippets />,
   })
-  const handleSetSection = title => {
-    setSection(title)
-  }
+  const [section, setSection] = useState()
+  const handleSetSection = useCallback(
+    title => {
+      setSection(title)
+    },
+    [setSection]
+  )
 
   useEffect(() => {
     const page = isBrowser && window.location.hash.replace("#", "")
@@ -33,8 +37,7 @@ const IndexPage = () => {
     btn.focus()
     setSection(page || "about")
     return () => {}
-  }, [handleSetSection])
-  const [section, setSection] = useState()
+  }, [handleSetSection, section])
 
   return (
     <Layout section={section}>

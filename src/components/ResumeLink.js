@@ -1,6 +1,4 @@
-import React from "react"
 /** @jsx jsx */
-import Link from "gatsby"
 import { jsx } from "theme-ui"
 import useSound from "use-sound"
 import levelUp from "../utils/sounds/level-up.mp3"
@@ -10,6 +8,7 @@ const ResumeLink = ({ resume }) => {
     <a
       onMouseEnter={play}
       onMouseOut={stop}
+      onBlur={stop}
       href={resume}
       target="_blank"
       rel="noreferrer nooppener"

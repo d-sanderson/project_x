@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import React, { useState } from "react"
+import { useState } from "react"
 import { Link, Box } from "theme-ui"
 import Fade from "react-reveal/Fade"
 import useSound from "use-sound"
@@ -62,7 +62,9 @@ const Footer = ({ section }) => {
             role="img"
             aria-label="heart-emoji"
             onMouseOver={play}
+            onFocus={play}
             onMouseOut={stop}
+            onBlur={stop}
           >
             💖
           </span>{" "}

@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx, Flex, Button, Heading } from "theme-ui"
-import React, { useEffect } from "react"
+import { useEffect } from "react"
 import Prism from "prismjs"
 import Display from "../Display"
 import Fade from "react-reveal/Fade"

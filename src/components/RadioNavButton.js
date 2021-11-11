@@ -1,4 +1,3 @@
-import React from "react"
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import { useColorMode } from "theme-ui"
@@ -9,7 +8,7 @@ const RadioNavButton = ({ title, handleSetSection }) => {
   const [play] = useSound(switchOn)
 
   const [colorMode, setColorMode] = useColorMode()
-  const isColorModeToggle = title == "🌞" || title == "🌕"
+  const isColorModeToggle = title === "🌞" || title === "🌕"
   const handleClick = e => {
     if (!isColorModeToggle) {
       handleSetSection(e.target.name)

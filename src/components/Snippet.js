@@ -1,7 +1,5 @@
-import React from "react"
 /** @jsx jsx */
 import { jsx, Heading } from "theme-ui"
-import { useStaticQuery, graphql } from "gatsby"
 import { copyToClipboard } from "../utils/shared"
 
 const Snippet = ({ language = "*", title, code, purpose }) => {

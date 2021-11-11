@@ -1,4 +1,3 @@
-import React from "react"
 /** @jsx jsx */
 import { jsx, Heading } from "theme-ui"
 import Jump from "react-reveal/Jump"
