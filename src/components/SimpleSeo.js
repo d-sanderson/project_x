@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import Helmet from "react-helmet"
-export default function SimpleSeo({ children, siteTitle, description }) {
+export default function SimpleSeo({ siteTitle, description }) {
   return (
     <header>
       <Helmet htmlAttributes={{ lang : 'en' }}>
@@ -10,7 +10,6 @@ export default function SimpleSeo({ children, siteTitle, description }) {
         <title>{siteTitle}</title>
         <link rel="canonical" href="https://davidsanderson.dev" />
       </Helmet>
-      {children}
     </header>
   )
 }
