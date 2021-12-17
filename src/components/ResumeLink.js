@@ -26,16 +26,6 @@ const ResumeLink = ({ resume }) => {
           boxShadow: '-6px 14px 12px 2px rgba(90, 90, 90, .22)'
         },
       }}
-      // .btn-1 {
-      //   background: #ffbbcc;
-      //   transition: all 0.25s ease-out;
-      // }
-      
-      // .btn-1:hover {
-      //   position: relative;
-      //   top: -3px;
-      //   box-shadow: -6px 14px 12px 2px rgba(90, 90, 90, .12);
-      // }
     >
       Resume
     </a>
