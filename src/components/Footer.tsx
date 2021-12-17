@@ -69,10 +69,10 @@ const Footer: FunctionComponent<Props> = ({ section, displayHitCounter } : Props
           <span
             role="img"
             aria-label="heart-emoji"
-            onMouseOver={play}
-            onFocus={play}
-            onMouseOut={stop}
-            onBlur={stop}
+            onMouseOver={() => play()}
+            onFocus={() => play()}
+            onMouseOut={() => stop()}
+            onBlur={() => stop()}
           >
             💖
           </span>
