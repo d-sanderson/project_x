@@ -9,26 +9,24 @@ import switchOn from '../utils/sounds/switch-on.mp3'
 interface Props {
   title: string
   handleSetSection?:any
+  isToggle?: boolean
 }
 
-const RadioNavButton: FunctionComponent<Props> = ({ title, handleSetSection } : Props) => {
+const RadioNavButton: FunctionComponent<Props> = ({ title, handleSetSection, isToggle } : Props) => {
   const [play] = useSound(switchOn)
   const [colorMode, setColorMode] = useColorMode()
-  const isColorModeToggle = title == '🌞' || title == '🌕'
   const handleClick = (e) => {
-    if (!isColorModeToggle) {
+    if (!isToggle) {
       handleSetSection(e.target.name)
     }
-    if (isColorModeToggle) {
+    if (isToggle) {
       setColorMode(colorMode === 'default' ? 'dark' : 'default')
     }
   }
-
   return (
-    <button
-      type="button"
-      onClick={() => (isBrowser && !isColorModeToggle ? (window.location.hash = title) : play())}
-      className={!isColorModeToggle && 'hue-rotate '}
+    <label
+      onClick={() => (isBrowser && !isToggle ? (window.location.hash = title) : play())}
+      className={!isToggle && 'hue-rotate '}
       title={title}
       sx={{
         fontWeight: '700',
@@ -94,13 +92,17 @@ const RadioNavButton: FunctionComponent<Props> = ({ title, handleSetSection } : 
             transform: 'scale(.5)',
             transformOrigin: 'center center',
             transition: '0.6s',
-            bg: `${isColorModeToggle ? 'toggleColor' : '#BB99FF'}`,
+            bg: `${isToggle ? 'toggleColor' : '#BB99FF'}`,
           },
         }}
       />
       <span className="text" />
-    </button>
+    </label>
   )
+}
+
+RadioNavButton.defaultProps = {
+  isToggle: false,
 }
 
 export default RadioNavButton

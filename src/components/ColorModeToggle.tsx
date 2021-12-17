@@ -6,7 +6,7 @@ const ColorModeToggle: FunctionComponent = () => {
   const [colorMode] = useColorMode()
   return (
     <Flex mr={[null, null, null, '350px']} sx={{ justifyContent: 'flex-end' }}>
-      <RadioNavButton title={colorMode === 'default' ? '🌞' : '🌕'} />
+      <RadioNavButton isToggle title="" />
     </Flex>
   )
 }

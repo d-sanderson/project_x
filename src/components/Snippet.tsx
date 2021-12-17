@@ -9,6 +9,7 @@ interface Props {
   code: string
   language?: string
 }
+
 const Snippet: FunctionComponent<Props> = ({
   language, title, code, purpose,
 }: Props) => {
