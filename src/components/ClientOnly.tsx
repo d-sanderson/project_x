@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { FunctionComponent } from 'react'
 
-
-function ClientOnly({ children, ...delegated }) {
+interface Props {
+  children: React.ReactNode
+}
+const ClientOnly: FunctionComponent<Props> = ({ children }: Props) => {
   const [hasMounted, setHasMounted] = React.useState(false)
   React.useEffect(() => {
     setHasMounted(true)
@@ -10,10 +12,9 @@ function ClientOnly({ children, ...delegated }) {
     return null
   }
   return (
-    <div {...delegated}>
+    <div>
       {children}
     </div>
   )
 }
 export default ClientOnly
-  
