@@ -5,13 +5,13 @@ import Fade from 'react-reveal/Fade'
 import useSound from 'use-sound'
 import heartBeat from '../utils/sounds/heartbeat.mp3'
 // Todo: bring back hit counter?
-// import Wobble from "react-reveal/Wobble"
-// import HitCounter from "./HitCounter"
+import HitCounter from './HitCounter'
 
-// interface Props {
-//   section: string
-// }
-const Footer: FunctionComponent = () => {
+interface Props {
+  section: string
+  displayHitCounter?: boolean
+}
+const Footer: FunctionComponent<Props> = ({ section, displayHitCounter } : Props) => {
   // const [slug, setSlug] = useState<string>('/')
   const [play, { stop }] = useSound(heartBeat, { volume: 0.2 })
 
@@ -89,11 +89,16 @@ const Footer: FunctionComponent = () => {
           </Link>
         </Box>
       </Fade>
-      <Fade delay={3000}>
-        {/* <HitCounter slug={section} /> */}
-      </Fade>
+      {displayHitCounter && (
+        <Fade delay={3000}>
+          <HitCounter slug={section} />
+        </Fade>
+      )}
     </footer>
   )
 }
 
+Footer.defaultProps = {
+  displayHitCounter: false,
+}
 export default Footer

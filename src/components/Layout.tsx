@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import { jsx, Container } from 'theme-ui'
 import React, { FunctionComponent, ReactNode } from 'react'
-import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 import ClientOnly from './ClientOnly'
 
@@ -10,7 +9,7 @@ import Footer from './Footer'
 
 interface Props {
   children: ReactNode
-  section: any
+  section?: string
 }
 const Layout: FunctionComponent<Props> = ({ children, section }: Props) => {
   const data = useStaticQuery<GatsbyTypes.SiteTitleQueryQuery>(graphql`
@@ -46,8 +45,8 @@ const Layout: FunctionComponent<Props> = ({ children, section }: Props) => {
   )
 }
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+Layout.defaultProps = {
+  section: '',
 }
 
 export default Layout
