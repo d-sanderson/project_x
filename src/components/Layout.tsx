@@ -13,7 +13,7 @@ interface Props {
   section: any
 }
 const Layout: FunctionComponent<Props> = ({ children, section }: Props) => {
-  const data = useStaticQuery(graphql`
+  const data = useStaticQuery<GatsbyTypes.SiteTitleQueryQuery>(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
