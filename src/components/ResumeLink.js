@@ -1,15 +1,9 @@
 import React from "react"
 /** @jsx jsx */
-import Link from "gatsby"
 import { jsx } from "theme-ui"
-import useSound from "use-sound"
-import levelUp from "../utils/sounds/level-up.mp3"
 const ResumeLink = ({ resume }) => {
-  const [play, { stop }] = useSound(levelUp, { volume: .4})
   return (
     <a
-      onMouseEnter={play}
-      onMouseOut={stop}
       href={resume}
       target="_blank"
       rel="noreferrer nooppener"
@@ -22,36 +16,26 @@ const ResumeLink = ({ resume }) => {
         textDecoration: "none",
         border: "solid 3px",
         textTransform: "uppercase",
+        transition: 'all 0.25s ease-out',
         "::before": {
           content: '""',
         },
-        ":hover::before": {
-          content: '"📝"',
-          fontSize: "60px",
-          position: "absolute",
-          textAlign: "center",
-          transition: ".5s",
-          top: "-70px",
-          left: "20%",
-          animation: "floating 2s linear 0ms infinite",
-          opacity: "1",
-        },
-        ":focus::before": {
-          content: '"📝"',
-          fontSize: "60px",
-          position: "absolute",
-          textAlign: "center",
-          transition: ".5s",
-          top: "-70px",
-          left: "10%",
-          transform: "rotate(360deg)",
-          opacity: "1",
-        },
-        "::active": {
-          boxShadow: "none",
-          top: "5px",
+        ":hover": {
+          top: "-3px",
+          position: 'relative',
+          boxShadow: '-6px 14px 12px 2px rgba(90, 90, 90, .22)'
         },
       }}
+      // .btn-1 {
+      //   background: #ffbbcc;
+      //   transition: all 0.25s ease-out;
+      // }
+      
+      // .btn-1:hover {
+      //   position: relative;
+      //   top: -3px;
+      //   box-shadow: -6px 14px 12px 2px rgba(90, 90, 90, .12);
+      // }
     >
       Resume
     </a>
