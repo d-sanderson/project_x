@@ -3,11 +3,18 @@ import { v4 as uuidv4 } from 'uuid'
 export const projectsData = [
   {
     id: uuidv4(),
+    title: 'Meow Wolf Credits Site',
+    description: '',
+    url: 'https://credits.meowwolf.com/',
+    tags: ['gatsby', 'airtable', 'tailwind'],
+  },
+  {
+    id: uuidv4(),
     title: 'Intersections',
     description: '',
     url: 'https://intersections.vitalspaces.org/',
     repo: 'https://github.com/imbrikis/intersections', // if no repo, the button will not show up
-    tags: ['d3', 'react', 'tailwind'],
+    tags: ['d3', 'react', 'tailwind', 'airtable'],
   },
   {
     id: uuidv4(),
