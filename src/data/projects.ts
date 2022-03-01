@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import { v4 as uuidv4 } from 'uuid'
 
 export const projectsData = [
@@ -54,41 +55,11 @@ export const projectsData = [
   },
   {
     id: uuidv4(),
-    title: 'us-places-to-visit',
-    repo: 'https://github.com/d-sanderson/whereto-react', // if no repo, the button will not show up
-    tags: ['nextjs', 'leaflet', 'hasura'],
-  },
-  {
-    id: uuidv4(),
-    title: 'tabata-time',
-    description: 'React Based Tabata Timer.',
-    url: 'http://tabata-timer.netlify.app',
-    repo: 'https://github.com/d-sanderson/tabata-time', // if no repo, the button will not show up
-    tags: ['create-react-app', 'emotion'],
-  },
-  {
-    id: uuidv4(),
     title: 'whereto react',
     description:
       'This application provides users with travel distance and duration data based their origin, destination, and method of travel. Each trip query is saved to a database and rendered back to the user and they are presented with a list of previously searched locations.',
     repo: 'https://github.com/d-sanderson/whereto-react', // if no repo, the button will not show up
     tags: ['create-react-app', 'google-maps-api', 'mongoose'],
-  },
-  {
-    id: uuidv4(),
-    title: 'react-typeracer',
-    description: 'React typeracer.com clone',
-    url: 'http://typeracer-react.surge.sh',
-    repo: 'https://github.com/d-sanderson/typeracer-react', // if no repo, the button will not show up
-    tags: ['create-react-app'],
-  },
-  {
-    id: uuidv4(),
-    title: 'note-writer',
-    description: 'Write yer own sheet music.',
-    url: 'http://note-writer.surge.sh',
-    repo: 'https://github.com/d-sanderson/notereader/tree/develop', // if no repo, the button will not show up
-    tags: ['create-react-app'],
   },
   {
     id: uuidv4(),
@@ -101,37 +72,9 @@ export const projectsData = [
   },
   {
     id: uuidv4(),
-    title: 'Github User Lookup',
-    description:
-      "A simple tool for looking up users by username on Github. The project was built using the Github API, create-react-app, tailwindcss, emotion, awesome-debounce-promise, and react-async-hook. The search input element uses a debounce function so that the API request is made 5 seconds after the user's last keystroke.",
-    url: 'http://github-user-lookup.netlify.app',
-    repo: 'https://github.com/d-sanderson/github-user-lookup', // if no repo, the button will not show up
-    tags: ['create-react-app', 'classnames', 'Tailwindcss'],
-  },
-  {
-    id: uuidv4(),
-    title: 'Rick and Morty API',
-    description: 'GraphQL API for serving Rick and Morty quotes.',
-    url: '',
-    repo: 'https://github.com/d-sanderson/RMGQL.API', // if no repo, the button will not show up
-    tags: ['C#', 'ASP.NET', 'GraphQL'],
-  },
-  {
-    id: uuidv4(),
-    img: 'create-react-app-emotion-tailwind-prettier.JPG',
-    title: 'create-react-app-emotion-tailwind-prettier',
-    description:
-      'I got tired of configuring create-react-app with Emotion, TailwindCSS, Prettier, and Husky so I created a React starter that comes with these packages pre-configured.',
-    url: '',
-    repo:
-      'https://github.com/d-sanderson/create-react-app-emotion-tailwind-prettier', // if no repo, the button will not show up
-    tags: ['create-react-app', 'Tailwindcss'],
-  },
-  {
-    id: uuidv4(),
     title: 'Note Reader 🎹',
     description:
-      'Note Reader is a simple React app that helps you learn how to read sheet music. More features are currently in development.',
+      'Note Reader is a React app that helps you learn how to read sheet music. More features are currently in development.',
     url: 'http://note-reader.surge.sh/',
     repo: 'https://github.com/d-sanderson/notereader', // if no repo, the button will not show up
     tags: ['create-react-app', 'react-keyboard-event-handler'],
