@@ -1,20 +1,23 @@
 /** @jsx jsx */
-import { jsx, Flex, Button, Heading } from "theme-ui"
-import React, { useEffect } from "react"
-import Prism from "prismjs"
-import Display from "../Display"
-import Fade from "react-reveal/Fade"
-import { jsSnippets, cssSnippets, htmlSnippets } from "../../data/snippets"
-import Snippet from "../Snippet"
+import {
+  jsx, Flex, Button, Heading,
+} from 'theme-ui'
+import React, { FunctionComponent, useEffect } from 'react'
+import Prism from 'prismjs'
+import Fade from 'react-reveal/Fade'
+import Display from '../Display'
+import { jsSnippets, cssSnippets, htmlSnippets } from '../../data/snippets'
+import Snippet from '../Snippet'
 
-const Snippets = () => {
+const Snippets: FunctionComponent = () => {
   useEffect(() => {
     // call the highlightAll() function to style our code blocks
     Prism.highlightAll()
-    return () => {}
   }, [])
-  const handleClick = e => document.getElementById(e.target.name).scrollIntoView({behavior: "smooth"});
-  const js = jsSnippets.map(el => (
+  const handleClick = (e: React.MouseEvent): void => {
+    document.getElementById(e.target.name).scrollIntoView({ behavior: 'smooth' })
+  }
+  const js = jsSnippets.map((el) => (
     <Snippet
       key={el.id}
       title={el.title}
@@ -23,7 +26,7 @@ const Snippets = () => {
       purpose={el.purpose}
     />
   ))
-  const css = cssSnippets.map(el => (
+  const css = cssSnippets.map((el) => (
     <Snippet
       key={el.id}
       title={el.title}
@@ -32,7 +35,7 @@ const Snippets = () => {
       purpose={el.purpose}
     />
   ))
-  const html = htmlSnippets.map(el => (
+  const html = htmlSnippets.map((el) => (
     <Snippet
       key={el.id}
       title={el.title}
@@ -48,8 +51,9 @@ const Snippets = () => {
         <Heading>Snippets</Heading>
       </Fade>
       <Fade delay={500}>
-        <h4 sx={{ textAlign: "center" }}>
-          A vault for frequently used code that I often forget or google.{" "}
+        <h4 sx={{ textAlign: 'center' }}>
+          A vault for frequently used code that I often forget or google.
+          {' '}
           <span>😬</span>
         </h4>
       </Fade>
@@ -83,7 +87,7 @@ const Snippets = () => {
         </Fade>
       </Flex>
 
-      <div sx={{ width: "100%" }}>
+      <div sx={{ width: '100%' }}>
         <Fade bottom delay={2200}>
           <Heading mt={4} id="html">
             HTML
