@@ -2,9 +2,7 @@ import React, { FunctionComponent } from 'react'
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
 import { useColorMode } from 'theme-ui'
-import useSound from 'use-sound'
 import { isBrowser } from '../utils/shared'
-import switchOn from '../utils/sounds/switch-on.mp3'
 
 interface Props {
   title: string
@@ -13,7 +11,6 @@ interface Props {
 }
 
 const RadioNavButton: FunctionComponent<Props> = ({ title, handleSetSection, isToggle } : Props) => {
-  const [play] = useSound(switchOn)
   const [colorMode, setColorMode] = useColorMode()
   const handleClick = (e) => {
     if (!isToggle) {
@@ -25,7 +22,7 @@ const RadioNavButton: FunctionComponent<Props> = ({ title, handleSetSection, isT
   }
   return (
     <label
-      onClick={() => (isBrowser && !isToggle ? (window.location.hash = title) : play())}
+      onClick={() => (isBrowser && !isToggle && (window.location.hash = title))}
       className={!isToggle && 'hue-rotate '}
       title={title}
       sx={{
