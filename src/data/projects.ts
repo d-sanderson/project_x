@@ -11,6 +11,13 @@ export const projectsData = [
   },
   {
     id: uuidv4(),
+    title: 'TCM Technique',
+    description: 'I helped the author of the TCM technique create an online implementation of their formula for age estimation in humans.',
+    url: 'https://tcmtechnique.vercel.app/',
+    tags: ['gatsby', 'material-ui'],
+  },
+  {
+    id: uuidv4(),
     title: 'Intersections',
     description: '',
     url: 'https://intersections.vitalspaces.org/',
