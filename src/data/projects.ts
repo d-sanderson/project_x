@@ -35,7 +35,6 @@ export const projectsData = [
     id: uuidv4(),
     title: 'Loan Officer Website Generator ',
     description: '',
-    url: 'https://goldwaterbank.com/lo/DallisBabb',
     tags: ['gatsby', 'tailwindcss', 'sharepoint'],
   },
   {
