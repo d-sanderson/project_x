@@ -33,8 +33,8 @@ export const projectsData = [
   },
   {
     id: uuidv4(),
-    title: 'Loan Officer Website Generator ',
-    description: '',
+    title: 'Mortgage Website Generator ',
+    description: 'I built a site that generated web pages for Mortgage Officers based on information queried from Microsoft Sharepoint',
     tags: ['gatsby', 'tailwindcss', 'sharepoint'],
   },
   {
