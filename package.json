@@ -5,6 +5,8 @@
   "version": "0.1.0",
   "author": "David Sanderson <sanderdj90@gmail.com>",
   "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@theme-ui/mdx": "^0.15.5",
     "@typescript-eslint/eslint-plugin": "5.55.0",
     "@typescript-eslint/parser": "5.55.0",
     "babel-plugin-prismjs": "2.1.0",
@@ -20,6 +22,7 @@
     "eslint-plugin-react-hooks": "4.6.0",
     "faunadb": "4.8.0",
     "gatsby": "5.7.0",
+    "gatsby-cli": "^5.7.0",
     "gatsby-image": "3.11.0",
     "gatsby-plugin-manifest": "5.7.0",
     "gatsby-plugin-offline": "6.7.0",
@@ -44,6 +47,7 @@
     "uuid": "9.0.0"
   },
   "devDependencies": {
+    "@mdx-js/react": "1.6.22",
     "prettier": "2.8.4"
   },
   "keywords": [
