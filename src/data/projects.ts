@@ -29,7 +29,7 @@ export const projectsData = [
     title: 'Meow Wolf Credits Site proof of concept',
     description: 'Prototype of the meow wolf credits site',
     url: 'https://mew-two.vercel.app',
-    tags: ['puppeteer', 'nextjs'],
+    tags: ['airtable', 'nextjs', 'tailwind'],
   },
   {
     id: uuidv4(),
