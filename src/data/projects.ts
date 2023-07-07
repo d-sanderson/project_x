@@ -26,6 +26,13 @@ export const projectsData = [
   },
   {
     id: uuidv4(),
+    title: 'Meow Wolf Credits Site proof of concept',
+    description: 'Prototype of the meow wolf credits site',
+    url: 'https://mew-two.vercel.app',
+    tags: ['puppeteer', 'nextjs'],
+  },
+  {
+    id: uuidv4(),
     title: 'Jamie Burnes Sculpture',
     description: '',
     url: 'https://jamieburnes.com/',
