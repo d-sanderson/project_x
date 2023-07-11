@@ -67,35 +67,37 @@ const ProjectCard: FunctionComponent<Props> = ({
     <Flex sx={{ justifyContent: 'flex-end' }} my={3}>
       {url && (
         <Link target="_blank" rel="noopenner noreferrer" href={url}>
-          <Box
+          <Button
             p={1}
             as="a"
             my={2}
             mx={1}
             sx={{
+              all: 'unset',
               '&': { ...buttonStyles, backgroundImage: 'linear-gradient(120deg,#43f4ff,#43f4ff)' },
               '&:hover': { ...hoverStyles },
             }}
           >
             See Live
-          </Box>
+          </Button>
         </Link>
       )}
       {repo && (
         <Link target="_blank" rel="noopenner noreferrer" href={repo}>
-          <Box
+          <Button
             p={1}
             my={2}
             mx={1}
             as="a"
             variant="secondary"
             sx={{
+              all: 'unset',
               '&': { ...buttonStyles, backgroundImage: 'linear-gradient(120deg,#f36aff,#f36aff)' },
               '&:hover': { ...hoverStyles },
             }}
           >
             View Source
-          </Box>
+          </Button>
         </Link>
       )}
     </Flex>
