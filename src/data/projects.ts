@@ -12,14 +12,14 @@ export const projectsData = [
   {
     id: uuidv4(),
     title: 'TCM Technique',
-    description: 'I helped the author of the TCM technique create an online implementation of their formula for age estimation in humans.',
+    description: 'I collaborated with the author of the TCM technique create an online implementation of their formula for age estimation of human remains.',
     url: 'https://tcmtechnique.vercel.app/',
     tags: ['gatsby', 'material-ui'],
   },
   {
     id: uuidv4(),
     title: 'Intersections',
-    description: '',
+    description: 'Collaborated with Vital Spaces and Albert Padilla to create a force-directed node graph representing artists and artwork displayed throughout Santa Fe in the summer of 2021.',
     url: 'https://intersections.vitalspaces.org/',
     repo: 'https://github.com/imbrikis/intersections', // if no repo, the button will not show up
     tags: ['d3', 'react', 'tailwind', 'airtable'],
@@ -85,24 +85,6 @@ export const projectsData = [
   },
   {
     id: uuidv4(),
-    title: 'Note Reader 🎹',
-    description:
-      'Note Reader is a React app that helps you learn how to read sheet music. More features are currently in development.',
-    url: 'http://note-reader.surge.sh/',
-    repo: 'https://github.com/d-sanderson/notereader', // if no repo, the button will not show up
-    tags: ['create-react-app', 'react-keyboard-event-handler'],
-  },
-  {
-    id: uuidv4(),
-    title: 'Poké-Search',
-    description:
-      'Poké-Search is an application that allows users to search for their favorite Pokémon or for a group of Pokémons sorted by type. If the Pokémon exists, the user is presented with an animated sprite and stats of the corresponding Pokémon. If the sprite is expired, the user sees the Squirtle squad and an error notification. I built this project using React and the pokemons library available through npm.',
-    url: 'http://poke-search-ds.surge.sh/',
-    repo: 'https://github.com/d-sanderson/pokesearch', // if no repo, the button will not show up
-    tags: ['create-react-app', 'pokemons'],
-  },
-  {
-    id: uuidv4(),
     title: 'Activate New Mexico Landing Page',
     description:
       'Landing page for forthcoming Activate NM website. The landing page was built using GatsbyJS and React ParticlesJS. The final site is being built in WordPress.',
@@ -128,14 +110,4 @@ export const projectsData = [
     repo: '', // if no repo, the button will not show up
     tags: ['Genesis', 'WordPress', 'Hubspot', 'WooCommerce'],
   },
-  // {
-  //   id: uuidv4(),
-  //   img: 'cat.jpg',
-  //   title: 'hype_bot_9000',
-  //   description:
-  //     'Hype Bot 9000 is a twitter bot that encourages developers who are going through the #100DaysOfCode challenge. The bot posts one inspirational quote a day, and periodically likes and retweets tweets that contain the #100DaysOfCode hashtag. I coded this bot using Node.js and the twit library available through npm.',
-  //   info2: '',
-  //   url: 'https://twitter.com/hype_bot_9000',
-  //   repo: '', // if no repo, the button will not show up
-  // },
 ]
