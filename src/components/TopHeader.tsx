@@ -21,7 +21,6 @@ const TopHeader: FunctionComponent = () => {
             padding: '20px 0',
             borderBottom: '1px solid',
             borderColor: 'text',
-            width: ['50%', null, null, '33%'],
             margin: '0 auto',
           }}
         >

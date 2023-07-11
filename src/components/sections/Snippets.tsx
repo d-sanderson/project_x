@@ -5,7 +5,6 @@ import {
 import React, { FunctionComponent, useEffect } from 'react'
 import Prism from 'prismjs'
 import Fade from 'react-reveal/Fade'
-import Display from '../Display'
 import { jsSnippets, cssSnippets, htmlSnippets } from '../../data/snippets'
 import Snippet from '../Snippet'
 
@@ -46,7 +45,7 @@ const Snippets: FunctionComponent = () => {
   ))
 
   return (
-    <Display>
+    <>
       <Fade top>
         <Heading>Snippets</Heading>
       </Fade>
@@ -103,7 +102,7 @@ const Snippets: FunctionComponent = () => {
         </Heading>
         {js}
       </div>
-    </Display>
+    </>
   )
 }
 export default Snippets

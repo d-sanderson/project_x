@@ -22,7 +22,6 @@ const Footer: FunctionComponent<Props> = ({ section, displayHitCounter } : Props
         flexShrink: 0,
         margin: '0 auto',
         textAlign: 'center',
-        width: ['100%', null, null, '37%'],
       }}
     >
       <Fade big delay={2000}>

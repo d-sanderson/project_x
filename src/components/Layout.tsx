@@ -26,19 +26,24 @@ const Layout: FunctionComponent<Props> = ({ children, section }: Props) => {
   return (
     <Container
       sx={{
-        margin: '0 auto',
-        display: 'flex',
-        flexDirection: 'column',
+        display: 'grid',
+        gridTemplateColumns: '1fr',
+        gridTemplateRows: '1fr',
         justifyContent: 'center',
         height: '100%',
         fontFamily: 'body',
         flex: '1 0 auto',
         maxWidth: '1200px',
+
+        '@media (min-width: 768px)': {
+          gridTemplateColumns: '1fr 1fr 1fr',
+
+        },
       }}
     >
       <SimpleSeo siteTitle={title} description={description} />
       <ClientOnly>
-        <main sx={{ flex: '1 0 auto' }}>{children}</main>
+        <main>{children}</main>
         <Footer section={section} />
       </ClientOnly>
     </Container>
