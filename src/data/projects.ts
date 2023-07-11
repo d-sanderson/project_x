@@ -12,14 +12,14 @@ export const projectsData = [
   {
     id: uuidv4(),
     title: 'TCM Technique',
-    description: 'I collaborated with the author of the TCM technique create an online implementation of their formula for age estimation of human remains.',
+    description: 'I collaborated with the author of the TCM technique to create an online implementation of their formula for age estimation of human remains.',
     url: 'https://tcmtechnique.vercel.app/',
     tags: ['gatsby', 'material-ui'],
   },
   {
     id: uuidv4(),
     title: 'Intersections',
-    description: 'Collaborated with Vital Spaces and Albert Padilla to create a force-directed node graph representing artists and artwork displayed throughout Santa Fe in the summer of 2021.',
+    description: 'Collaborated with non-profit <a href="https://www.vitalspaces.org" target="blank">Vital Spaces</a> and Albert Padilla to create an interactive force-directed node graph representing artists and artwork displayed throughout Santa Fe in the summer of 2021.',
     url: 'https://intersections.vitalspaces.org/',
     repo: 'https://github.com/imbrikis/intersections', // if no repo, the button will not show up
     tags: ['d3', 'react', 'tailwind', 'airtable'],
