@@ -20,7 +20,7 @@ export const projectsData = [
     id: uuidv4(),
     title: 'Intersections',
     description: 'Collaborated with non-profit <a href="https://www.vitalspaces.org" target="blank">Vital Spaces</a> and Albert Padilla to create an interactive force-directed node graph representing artists and artwork displayed throughout Santa Fe in the summer of 2021.',
-    url: 'https://intersections.vitalspaces.org/',
+    url: 'https://web.archive.org/web/20231021191156/https://intersections.vitalspaces.org/',
     repo: 'https://github.com/imbrikis/intersections', // if no repo, the button will not show up
     tags: ['d3', 'react', 'tailwind', 'airtable'],
   },
