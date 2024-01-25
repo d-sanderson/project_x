@@ -43,11 +43,11 @@ const Footer: FunctionComponent<Props> = ({ section, displayHitCounter } : Props
           {' '}
           <Link
             variant="primary"
-            href="https://www.netlify.com/"
+            href="https://www.vercel.com/"
             target="_blank"
             rel="noreferrer noopenner"
           >
-            Netlify
+            Vercel
           </Link>
           , &
           {' '}
@@ -80,11 +80,11 @@ const Footer: FunctionComponent<Props> = ({ section, displayHitCounter } : Props
           {' '}
           <Link
             sx={{ color: '#00ACEE', fontSize: '10px' }}
-            href="https://twitter.com/_dsanderson"
+            href="https://github.com/d-sanderson"
             target="_blank"
             rel="noreferrer noopenner"
           >
-            @_dsanderson
+            d-sanderson
           </Link>
         </Box>
       </Fade>
