@@ -88,8 +88,7 @@ export const projectsData = [
     title: 'Activate New Mexico Landing Page',
     description:
       'Landing page for forthcoming Activate NM website. The landing page was built using GatsbyJS and React ParticlesJS. The final site is being built in WordPress.',
-    url: 'http://kindly-note.surge.sh/',
     repo: 'https://github.com/d-sanderson/under-construction-activatenm', // if no repo, the button will not show up
     tags: ['Gatsby', 'gatsby themes'],
-  }
+  },
 ]
