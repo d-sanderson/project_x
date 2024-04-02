@@ -5,7 +5,7 @@ export const projectsData = [
   {
     id: uuidv4(),
     title: 'Adventure Time CYOA',
-    description: 'Adventure time is a choose your own adventure simulator that leverages Gemini Generative AI to craft a compelling custom adventure in the world of your choosing!',
+    description: 'Adventure time is a text-based choose your own adventure simulator that leverages Gemini Generative AI to craft a compelling custom adventure in the world of your choosing!',
     url: 'https://adventure-time-cyoa.vercel.app/',
     tags: ['astro', 'gemini ai'],
   },
