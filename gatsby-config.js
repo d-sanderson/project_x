@@ -7,13 +7,13 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: 'David Sanderson, Software Developer',
+    title: 'David Sanderson, Software Engineer',
     description:
       "Hi! I'm David, I am a Software Engineer from Albuquerque, New Mexico. I enjoy playing piano, learning new languages, and leveraging code to (creatively) solve problems.",
     author: '@_dsanderson',
     topHeader: {
       superTitle: ' David Sanderson',
-      subTitle: 'Software Developer',
+      subTitle: 'Software Engineer',
     },
     about: {
       title: 'Hi I am David Sanderson!',
