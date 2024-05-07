@@ -8,7 +8,8 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: 'David Sanderson, Software Developer',
-    description: 'Hi! I\'m David, I am a software developer from Albuquerque, New Mexico. I enjoy music, design, and engineering creative solutions to challenging problems.',
+    description:
+      "Hi! I'm David, I am a Software Engineer from Albuquerque, New Mexico. I enjoy playing piano, learning new languages, and leveraging code to (creatively) solve problems.",
     author: '@_dsanderson',
     topHeader: {
       superTitle: ' David Sanderson',
@@ -16,7 +17,7 @@ module.exports = {
     },
     about: {
       title: 'Hi I am David Sanderson!',
-      content: 'I am a software developer from Albuquerque, New Mexico. I enjoy music, design, and engineering creative solutions to challenging problems.',
+      content: ' I am a Software Engineer from Albuquerque, New Mexico. I enjoy playing piano, learning new languages, and leveraging code to (creatively) solve problems.',
     },
   },
   plugins: [
