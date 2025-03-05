@@ -6,12 +6,13 @@ export const projectsData = [
     id: uuidv4(),
     title: 'Battleship',
     description: 'A Battleship game built with NextJS and Partykit',
+    url: 'https://battleship-lyart-zeta.vercel.app/',
   },
   {
     id: uuidv4(),
     title: 'Collaborative Grid',
     description: 'A shareable collaborative grid for creating simple pixel art.',
-    url: 'pixel-art-rosy-tau.vercel.app',
+    url: 'https://pixel-art-rosy-tau.vercel.app',
     tags: ['nextjs', 'partykit', 'tailwind'],
   },
   {
