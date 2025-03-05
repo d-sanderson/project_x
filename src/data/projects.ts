@@ -4,6 +4,18 @@ import { v4 as uuidv4 } from 'uuid'
 export const projectsData = [
   {
     id: uuidv4(),
+    title: 'Battleship',
+    description: 'A Battleship game built with NextJS and Partykit',
+  },
+  {
+    id: uuidv4(),
+    title: 'Collaborative Grid',
+    description: 'A shareable collaborative grid for creating simple pixel art.',
+    url: 'pixel-art-rosy-tau.vercel.app',
+    tags: ['nextjs', 'partykit', 'tailwind'],
+  },
+  {
+    id: uuidv4(),
     title: 'Adventure Time CYOA',
     description: 'Adventure time is a text-based choose your own adventure simulator that leverages Gemini Generative AI to craft a compelling custom adventure in the world of your choosing!',
     url: 'https://adventure-time-cyoa.vercel.app/',
