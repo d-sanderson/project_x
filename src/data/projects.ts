@@ -4,15 +4,15 @@ import { v4 as uuidv4 } from 'uuid'
 export const projectsData = [
   {
     id: uuidv4(),
-    title: 'Floor is Lava',
-    description: 'A platformer built Kaplay where the goal is to escape the lava.',
+    title: 'Sludge Runners (in development)',
+    description: 'A platformer game built with Kaplay.',
     url: 'https://floor-is-lava-lyart.vercel.app/',
     tags: ['kaplay'],
   },
   {
     id: uuidv4(),
     title: 'Battleship',
-    description: 'A Battleship game built with NextJS and Partykit',
+    description: 'A recreation of the classic game Battleship.',
     url: 'https://battleship-lyart-zeta.vercel.app/',
   },
   {
