@@ -13,11 +13,13 @@ import {
   // Snippets
 } from '../components/sections'
 import ColorModeToggle from '../components/ColorModeToggle'
+import Games from '../components/sections/Games'
 
 const IndexPage: FunctionComponent = () => {
   const [components] = useState({
     about: <About />,
     projects: <Projects />,
+    games: <Games />,
     resume: <Resume />,
     // blog: <Blog />, // TODO: add this back?
     // snippets: <Snippets />,

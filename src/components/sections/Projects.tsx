@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react'
 import Fade from 'react-reveal/Fade'
-import { Badge, Heading } from 'theme-ui'
+import { Heading } from 'theme-ui'
 import ProjectCard from '../ProjectCard'
 import { projectsData } from '../../data/projects'
 

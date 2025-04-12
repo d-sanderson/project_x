@@ -4,35 +4,16 @@ import { v4 as uuidv4 } from 'uuid'
 export const projectsData = [
   {
     id: uuidv4(),
-    title: 'Sludge Runners (in development)',
-    description: 'A platformer game built with Kaplay.',
-    url: 'https://floor-is-lava-lyart.vercel.app/',
-    tags: ['kaplay'],
-  },
-  {
-    id: uuidv4(),
-    title: 'Battleship',
-    description: 'A recreation of the classic game Battleship.',
-    url: 'https://battleship-lyart-zeta.vercel.app/',
-  },
-  {
-    id: uuidv4(),
-    title: 'Collaborative Grid',
-    description: 'A shareable collaborative grid for creating simple pixel art.',
-    url: 'https://pixel-art-rosy-tau.vercel.app',
-    tags: ['nextjs', 'partykit', 'tailwind'],
-  },
-  {
-    id: uuidv4(),
-    title: 'Adventure Time CYOA',
-    description: 'Adventure time is a text-based choose your own adventure simulator that leverages Gemini Generative AI to craft a compelling custom adventure in the world of your choosing!',
-    url: 'https://adventure-time-cyoa.vercel.app/',
-    tags: ['astro', 'gemini ai'],
+    title: 'Cover Letter Wizard (in development)',
+    description:
+      'A web application that generates cover letters based a user\'s resume and job description. The application uses Gemini AI API to generate the cover letter text, and it is built using React, ShadCN UI, and Vercel.',
+    url: 'https://coverletterwizard.org/',
+    tags: ['react', 'gemini', 'vercel', 'shadcn'],
   },
   {
     id: uuidv4(),
     title: 'Meow Wolf Credits Site',
-    description: '',
+    description: 'Developed a site for Meow Wolf to display credits for their artists and contributors. The site is built using Gatsby, Airtable, and Tailwind CSS.',
     url: 'https://credits.meowwolf.com/',
     tags: ['gatsby', 'airtable', 'tailwind'],
   },

@@ -2,15 +2,14 @@ import React, { FunctionComponent } from 'react'
 import {
   Box, Flex, Button, Badge, Link,
   useColorMode,
-  useThemeUI,
 } from 'theme-ui'
 
 interface Props {
   title: string
-  description: string
-  tags: string[]
-  repo: string
-  url: string
+  description?: string
+  tags?: string[]
+  repo?: string
+  url?: string
 }
 
 const hoverStyles = {
@@ -21,8 +20,7 @@ const hoverStyles = {
 const ProjectCard: FunctionComponent<Props> = ({
   title, tags, description, repo, url,
 }: Props) => {
-  const [colorMode, setColorMode] = useColorMode()
-  const { theme } = useThemeUI()
+  const [colorMode] = useColorMode()
 
   const anchorStyles = {
     color: colorMode === 'default' ? 'white' : 'black',
@@ -51,25 +49,27 @@ const ProjectCard: FunctionComponent<Props> = ({
     >
       <Flex mt={2} sx={{ justifyContent: 'center' }}>
         {tags
-          && tags.map((tag, i) => (
+          && tags.map((tag) => (
             <Badge key={tag} variant="outline" p={1} mx={2}>
               {tag.toLowerCase()}
             </Badge>
           ))}
       </Flex>
       <h3>{title}</h3>
-      <Box
-        sx={{
-          a: {
-            ...anchorStyles,
-          },
-          'a:hover': {
-            ...hoverStyles,
-          },
-        }}
-        my={2}
-        dangerouslySetInnerHTML={{ __html: description }}
-      />
+      {description && (
+        <Box
+          sx={{
+            a: {
+              ...anchorStyles,
+            },
+            'a:hover': {
+              ...hoverStyles,
+            },
+          }}
+          my={2}
+          dangerouslySetInnerHTML={{ __html: description }}
+        />
+      )}
       <Flex sx={{ justifyContent: 'flex-end' }} my={3}>
         {url && (
           <Link target="_blank" rel="noopenner noreferrer" href={url}>
@@ -109,6 +109,13 @@ const ProjectCard: FunctionComponent<Props> = ({
       </Flex>
     </Box>
   )
+}
+
+ProjectCard.defaultProps = {
+  description: '',
+  repo: undefined,
+  url: undefined,
+  tags: undefined,
 }
 
 export default ProjectCard
