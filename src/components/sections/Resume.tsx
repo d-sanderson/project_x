@@ -2,7 +2,7 @@ import React, { FunctionComponent } from 'react'
 import Fade from 'react-reveal/Fade'
 import { Flex } from 'theme-ui'
 import ResumeLink from '../ResumeLink'
-import resume from '../../../static/assets/david_sanderson_resume_040124-compressed.pdf'
+import resume from '../../../static/assets/david_sanderson_resume_01152025.pdf'
 
 const Resume: FunctionComponent = () => (
   <Fade top>
