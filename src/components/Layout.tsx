@@ -5,7 +5,6 @@ import { useStaticQuery, graphql } from 'gatsby'
 import ClientOnly from './ClientOnly'
 
 import SimpleSeo from './SimpleSeo'
-import Footer from './Footer'
 
 interface Props {
   children: ReactNode
@@ -44,7 +43,6 @@ const Layout: FunctionComponent<Props> = ({ children, section }: Props) => {
       <SimpleSeo siteTitle={title} description={description} />
       <ClientOnly>
         <main>{children}</main>
-        <Footer section={section} />
       </ClientOnly>
     </Container>
   )
