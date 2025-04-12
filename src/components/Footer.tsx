@@ -29,36 +29,6 @@ const Footer: FunctionComponent<Props> = ({ section, displayHitCounter } : Props
           ©
           {' '}
           {new Date().getFullYear()}
-          , Built with
-          {' '}
-          <Link
-            variant="primary"
-            href="https://www.gatsbyjs.org"
-            target="_blank"
-            rel="noreferrer noopenner"
-          >
-            Gatsby
-          </Link>
-          ,
-          {' '}
-          <Link
-            variant="primary"
-            href="https://www.vercel.com/"
-            target="_blank"
-            rel="noreferrer noopenner"
-          >
-            Vercel
-          </Link>
-          , &
-          {' '}
-          <Link
-            variant="primary"
-            href="https://theme-ui.com/"
-            target="_blank"
-            rel="noreferrer noopenner"
-          >
-            Theme-ui
-          </Link>
         </Box>
       </Fade>
       <Fade big delay={2500}>
