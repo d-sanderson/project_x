@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'uuid'
 export const gamesData = [
   {
     id: uuidv4(),
-    title: 'Sludge Runners (in development)',
+    title: 'Sludge Runners',
     description: 'A platformer game built with Kaplay.',
     url: 'https://floor-is-lava-lyart.vercel.app/',
     tags: ['kaplay'],
@@ -14,6 +14,7 @@ export const gamesData = [
     title: 'Battleship',
     description: 'A recreation of the classic game Battleship.',
     url: 'https://battleship-lyart-zeta.vercel.app/',
+    tags: ['nextjs', 'tailwind', 'v0'],
   },
   {
     id: uuidv4(),

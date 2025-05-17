@@ -4,14 +4,6 @@ import { v4 as uuidv4 } from 'uuid'
 export const projectsData = [
   {
     id: uuidv4(),
-    title: 'Cover Letter Wizard (in development)',
-    description:
-      'A web application that generates cover letters based a user\'s resume and job description. The application uses Gemini AI API to generate the cover letter text, and it is built using React, ShadCN UI, and Vercel.',
-    url: 'https://coverletterwizard.org/',
-    tags: ['react', 'gemini', 'vercel', 'shadcn'],
-  },
-  {
-    id: uuidv4(),
     title: 'Meow Wolf Credits Site',
     description: 'Developed a site for Meow Wolf to display credits for their artists and contributors. The site is built using Gatsby, Airtable, and Tailwind CSS.',
     url: 'https://credits.meowwolf.com/',
